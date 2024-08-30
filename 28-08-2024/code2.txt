@@ -1,22 +1,3 @@
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-
-PS C:\Users\jaich> mongosh
-Current Mongosh Log ID: 66d14252a2cc4188c046b798
-Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.5
-Using MongoDB:          7.0.14
-Using Mongosh:          2.2.5
-mongosh 2.3.0 is available for download: https://www.mongodb.com/try/download/shell
-
-For mongosh info see: https://docs.mongodb.com/mongodb-shell/
-
-------
-   The server generated these startup warnings when booting
-   2024-08-28T09:59:04.380+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
-------
-
 test> use chitkara
 switched to db chitkara
 chitkara> db.user.Documents()
@@ -26,438 +7,6 @@ chitkara> db.user.countDocuments()
 chitkara> db.user.estimatedDocuments()
 TypeError: db.user.estimatedDocuments is not a function
 chitkara> db.user.estimatedDocumentCount()
-8
-chitkara> db.student.insertMany([)
-Uncaught:
-SyntaxError: Unexpected token (1:23)
-
-> 1 | db.student.insertMany([)
-    |                        ^
-  2 |
-
-chitkara>     {
-...         name:"Dhruv",
-...         age:"19",
-...         marks: "88",
-...         subject: "Maths"
-...     },
-...     {
-...         name: "Daksh",
-...         age: "20",
-...         marks: "92",
-...         subject: "Physics"
-...     },
-...     {
-...         name: "Rahul",
-...         age: "21",
-...         marks: "85",
-...         subject: "Chemistry"
-...     },
-...     {
-...         name: "Manan",
-...         age: "22",
-...         marks: "90",
-...         subject: "Biology"
-...     },
-...     {
-...         name: "Karan",
-...         age: "23",
-...         marks: "87",
-...         subject: "Computer Science"
-...     }
-... ];
-Uncaught:
-SyntaxError: Missing semicolon. (3:11)
-
-  1 |     {
-  2 |         name:"Dhruv",
-> 3 |         age:"19",
-    |            ^
-  4 |         marks: "88",
-  5 |         subject: "Maths"
-  6 |     },
-
-chitkara> db.student.insertMany(const students = [)
-Uncaught:
-SyntaxError: Unexpected token (1:22)
-
-> 1 | db.student.insertMany(const students = [)
-    |                       ^
-  2 |
-
-chitkara>     {
-...         name: "Dhruv",
-...         age: "19",
-...         marks: "88",
-...         subject: "Maths"
-...     },
-...     {
-...         name: "Daksh",
-...         age: "20",
-...         marks: "92",
-...         subject: "Physics"
-...     },
-...     {
-...         name: "Rahul",
-...         age: "21",
-...         marks: "85",
-...         subject: "Chemistry"
-...     },
-...     {
-...         name: "Manan",
-...         age: "22",
-...         marks: "90",
-...         subject: "Biology"
-...     },
-...     {
-...         name: "Karan",
-...         age: "23",
-...         marks: "87",
-...         subject: "Computer Science"
-...     }
-... ];
-Uncaught:
-SyntaxError: Missing semicolon. (3:11)
-
-  1 |     {
-  2 |         name: "Dhruv",
-> 3 |         age: "19",
-    |            ^
-  4 |         marks: "88",
-  5 |         subject: "Maths"
-  6 |     },
-
-chitkara> db.students.insertMany([
-... ...   {
-... ...     name: "Alex Johnson",
-Uncaught:
-SyntaxError: Unexpected token, expected "," (3:12)
-
-  1 | db.students.insertMany([
-  2 | ...   {
-> 3 | ...     name: "Alex Johnson",
-    |             ^
-  4 |
-
-chitkara> ...     class: "10th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "10th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "Mathematics",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "Mathematics",
-    | ^
-  2 |
-
-chitkara> ...     marks: 85
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 85
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "Emily Carter",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "Emily Carter",
-    | ^
-  2 |
-
-chitkara> ...     class: "9th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "9th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "Science",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "Science",
-    | ^
-  2 |
-
-chitkara> ...     marks: 90
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 90
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "Michael Brown",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "Michael Brown",
-    | ^
-  2 |
-
-chitkara> ...     class: "11th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "11th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "History",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "History",
-    | ^
-  2 |
-
-chitkara> ...     marks: 75
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 75
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "Sophia Williams",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "Sophia Williams",
-    | ^
-  2 |
-
-chitkara> ...     class: "10th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "10th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "English",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "English",
-    | ^
-  2 |
-
-chitkara> ...     marks: 88
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 88
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "David Smith",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "David Smith",
-    | ^
-  2 |
-
-chitkara> ...     class: "12th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "12th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "Physics",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "Physics",
-    | ^
-  2 |
-
-chitkara> ...     marks: 92
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 92
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "Olivia Davis",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "Olivia Davis",
-    | ^
-  2 |
-
-chitkara> ...     class: "11th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "11th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "Chemistry",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "Chemistry",
-    | ^
-  2 |
-
-chitkara> ...     marks: 89
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 89
-    | ^
-  2 |
-
-chitkara> ...   },
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   },
-    | ^
-  2 |
-
-chitkara> ...   {
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   {
-    | ^
-  2 |
-
-chitkara> ...     name: "Jameson Reed",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     name: "Jameson Reed",
-    | ^
-  2 |
-
-chitkara> ...     class: "12th Grade",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     class: "12th Grade",
-    | ^
-  2 |
-
-chitkara> ...     subject: "Biology",
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     subject: "Biology",
-    | ^
-  2 |
-
-chitkara> ...     marks: 95
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...     marks: 95
-    | ^
-  2 |
-
-chitkara> ...   }
-Uncaught:
-SyntaxError: Unexpected token (1:0)
-
-> 1 | ...   }
-    | ^
-  2 |
 
 chitkara> db.students.insertMany([
 ...     {
@@ -515,16 +64,10 @@ chitkara> db.students.insertMany([
     '6': ObjectId('66d14ac4a2cc4188c046b79f')
   }
 }
-chitkara> db.students.updatetMany({},{$set: {subject:"datascience",address:"Chitkara University"})
-Uncaught:
-SyntaxError: Unexpected token, expected "," (1:87)
 
-> 1 | db.students.updatetMany({},{$set: {subject:"datascience",address:"Chitkara University"})
-    |                                                                                        ^
-  2 |
+Question: update the subject to datascience and add address:Chitkara University
 
-chitkara> db.students.updatetMany({},{$set: {subject:"datascience",address:"Chitkara University"}})
-TypeError: db.students.updatetMany is not a function
+
 chitkara> db.students.updateMany({},{$set: {subject:"datascience",address:"Chitkara University"}})
 {
   acknowledged: true,
@@ -533,6 +76,8 @@ chitkara> db.students.updateMany({},{$set: {subject:"datascience",address:"Chitk
   modifiedCount: 7,
   upsertedCount: 0
 }
+Question: Set the grade of every student:
+
 chitkara> db.students.updateMany({name:"Alex Johnson"},{$set: {grade:"A"}})
 {
   acknowledged: true,
@@ -597,4 +142,295 @@ chitkara> db.students.updateMany({name:"Jameson Reed"},{$set: {grade:"A"}})
   modifiedCount: 1,
   upsertedCount: 0
 }
-chitkara>
+
+Question: Find students whose age is 22 and marks are 90:
+
+chitkara> db.students.find({ age: 22, marks: 90 }).pretty()
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b799'),
+    name: 'Alex Johnson',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79c'),
+    name: 'Sophia Williams',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79e'),
+    name: 'Olivia Davis',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'B++',
+    age: 22
+  }
+]
+
+Question: Students whose marks >=80 and age >=18
+
+chitkara> db.students.find({ marks: { $gte: 80 }, age: { $gte: 18 } }).pretty()
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b799'),
+    name: 'Alex Johnson',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79a'),
+    name: 'Emily Carter',
+    class: '9th Grade',
+    subject: 'datascience',
+    marks: 80,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 20
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79b'),
+    name: 'Michael Brown',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79c'),
+    name: 'Sophia Williams',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79e'),
+    name: 'Olivia Davis',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'B++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79f'),
+    name: 'Jameson Reed',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  }
+]
+
+Question: Find data of students whose grade are A+:
+
+chitkara> db.students.find({grade: "A+"}).pretty()
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b799'),
+    name: 'Alex Johnson',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A+',
+    age: 22
+  }
+]
+
+Question: Apply OR operator:
+
+
+chitkara> db.students.find({ $or: [ { grade: "A+" }, { marks: { $gte: 80 } }, { age: { $gte: 18 } }] }).pretty()
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b799'),
+    name: 'Alex Johnson',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A+',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79a'),
+    name: 'Emily Carter',
+    class: '9th Grade',
+    subject: 'datascience',
+    marks: 80,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 20
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79b'),
+    name: 'Michael Brown',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79c'),
+    name: 'Sophia Williams',
+    class: '10th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'A++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79d'),
+    name: 'David Smith',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 70,
+    address: 'Chitkara University',
+    grade: 'B',
+    age: 18
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79e'),
+    name: 'Olivia Davis',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 90,
+    address: 'Chitkara University',
+    grade: 'B++',
+    age: 22
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79f'),
+    name: 'Jameson Reed',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  }
+]
+
+Question: Apply NOR operator:
+
+chitkara> db.students.find({ $nor: [ { grade: "A+" }, { marks: 90 }, { age: 22 }] }).pretty()
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79a'),
+    name: 'Emily Carter',
+    class: '9th Grade',
+    subject: 'datascience',
+    marks: 80,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 20
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79b'),
+    name: 'Michael Brown',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79d'),
+    name: 'David Smith',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 70,
+    address: 'Chitkara University',
+    grade: 'B',
+    age: 18
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79f'),
+    name: 'Jameson Reed',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  }
+]
+
+Question:Apply NOT operator:
+
+chitkara> db.students.find({ grade: { $not: { $eq: "A+" } }, marks: { $not: { $eq: 90 } }, age: { $not: { $eq: 22 } } }).pretty()
+
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79a'),
+    name: 'Emily Carter',
+    class: '9th Grade',
+    subject: 'datascience',
+    marks: 80,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 20
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79b'),
+    name: 'Michael Brown',
+    class: '11th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79d'),
+    name: 'David Smith',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 70,
+    address: 'Chitkara University',
+    grade: 'B',
+    age: 18
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79f'),
+    name: 'Jameson Reed',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 85,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 19
+  }
+]
+
+
+
+
