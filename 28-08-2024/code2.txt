@@ -431,6 +431,29 @@ chitkara> db.students.find({ grade: { $not: { $eq: "A+" } }, marks: { $not: { $e
   }
 ]
 
-
+Question: Use of Exists operator
+chitkara> db.students.find({marks:{$exists: true,$nin: [90,85]}})
+[
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79a'),
+    name: 'Emily Carter',
+    class: '9th Grade',
+    subject: 'datascience',
+    marks: 80,
+    address: 'Chitkara University',
+    grade: 'A',
+    age: 20
+  },
+  {
+    _id: ObjectId('66d14ac4a2cc4188c046b79d'),
+    name: 'David Smith',
+    class: '12th Grade',
+    subject: 'datascience',
+    marks: 70,
+    address: 'Chitkara University',
+    grade: 'B',
+    age: 18
+  }
+]
 
 
