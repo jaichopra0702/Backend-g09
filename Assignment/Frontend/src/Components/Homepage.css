@@ -1,0 +1,205 @@
+/* Base Styles */
+.navbar {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+    padding: 0 20px;        
+    position: relative;  
+    margin-top: 20px; 
+}
+.line {
+    border-bottom: 1px solid black; /* Line style */
+    margin-top: 20px;             /* Space between navbar and line */
+}
+.logo {
+    margin-right: 65px;
+}
+.logo img {
+    margin-left: 30px;
+    height: 50px;
+    width: auto; /* Maintain original width */
+    background-color: floralwhite; /* Match the background color */
+    mix-blend-mode: multiply; /* Blend image with the background */
+    transition: all 0.3s ease; /* Smooth resizing */
+}
+.options {
+    margin-right: 30px;
+    font-size: 17px;
+}
+.options ul {
+    display: flex;            
+    list-style: none;           
+    padding: 0;                  
+    margin: 0;                   
+}
+.options li {
+    display: flex;
+    margin: 0 15px;   
+    cursor: pointer;   
+    align-items: center;       
+}
+.options li.get-started {
+    display: flex;              
+    align-items: center;      
+    justify-content: center;    
+    padding: 10px 20px;        
+    border-radius: 22px;        
+    background-color: black;    
+    color: white;               
+    font-weight: bold;          
+    text-align: center;         
+    text-decoration: none;      
+}
+.options li.sign a{
+    text-decoration: none;
+    color: black;
+}
+.left h1 {
+    margin-left: 70px;
+    font-size: 100px;
+}
+.left p {
+    margin-top: -30px;
+    margin-left: 70px;
+    font-size: 25px;
+}
+.left button.buttons{
+    margin-top: 50px;
+    margin-left: 70px;
+    display: flex;              
+    align-items: center;      
+    justify-content: center;    
+    padding: 10px 20px;        
+    border-radius: 22px;        
+    background-color: black;    
+    color: white;               
+    font-weight: bold;          
+    text-align: center;         
+    text-decoration: none; 
+    font-size: 18px;  
+    cursor: pointer;  
+    width: auto;
+}
+.right {
+    position: absolute; 
+    right: 20px;
+    top: 95px;
+    width: 40%; 
+    display: flex; 
+    justify-content: flex-end;
+}
+.right img {
+    max-width: 100%; 
+    height: auto; 
+    width: 73%;
+}
+.footer {
+    padding: 20px;
+}
+.footer ul {
+    display: flex;            
+    list-style: none;          
+    padding: 0;                  
+    margin: 0;  
+    margin-left: 250px;   
+    flex-wrap: wrap;                
+}
+.footer li {
+    text-align: center; 
+    display: flex;
+    margin: 0 15px;   
+    cursor: pointer;   
+    align-items: center;     
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .logo {
+        margin-right: 40px;
+    }
+    .options {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .left h1 {
+        font-size: 80px;
+    }
+    .left p {
+        font-size: 20px;
+    }
+    .left button {
+        font-size: 16px;
+    }
+    .right {
+        width: 50%;
+        right: 10px;
+        top: 80px;
+    }
+    .right img {
+        width: 60%;
+    }
+    .footer ul {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .options {
+        margin-right: 0;
+        font-size: 14px;
+    }
+    .options ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .options li {
+        margin: 10px 0;
+    }
+    .left {
+        text-align: center;
+        margin-left: 0;
+    }
+    .left h1 {
+        font-size: 60px;
+    }
+    .left p {
+        font-size: 18px;
+    }
+    .left button {
+        font-size: 14px;
+    }
+    .right {
+        width: 100%;
+        right: 0;
+        top: 0;
+        display: none; /* Hide the image on smaller screens */
+    }
+    .footer ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .left h1 {
+        font-size: 50px;
+    }
+    .left p {
+        font-size: 16px;
+    }
+    .left button {
+        font-size: 12px;
+    }
+    .right {
+        display: none; /* Hide the image on mobile screens */
+    }
+}
